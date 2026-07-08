@@ -16,7 +16,6 @@ def main():
         "P104": [8, 25],
     }
     while True:
-        os.system("cls")
         opcion = print(f"""
             ========== MENÚ PRINCIPAL ==========
             1. Stock por categoría
@@ -28,6 +27,7 @@ def main():
             7. Salir
             ===================================
             """)
+        opcion = input("Seleccione una opción: ")
         match opcion:
             case "1":
                 os.system("cls")
@@ -162,5 +162,5 @@ def main():
                 break
 
 
-if __name__ == "___main__":
+if __name__ == "__main__":
     main()
